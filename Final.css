@@ -1,0 +1,42 @@
+#topNav{
+  font-family: serif;
+  font-size: 48px;
+  background-color:#A52A2A;
+  color: white;
+  padding-left: 50px;
+}
+
+#topNav h1:hover{
+  color: black;
+}
+
+#lowNav {
+  visibility: hidden;
+}
+
+header{
+  font-family: serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #A52A2A;
+  padding-bottom: 0px;
+}
+
+#midNav{
+background-color: red;
+color: white;
+font-weight: bold;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+input{
+  color: white;
+  background-color:#A52A2A;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+body{
+  background-color: #FFA07A;
+}

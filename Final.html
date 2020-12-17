@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>Movie Program</title>
+      <link rel = "stylesheet" href = "Final.css">
+    <script>
+    var score = 0;
+    var questionCount = 0;
+    var totalAttempts = 0;
+    var answer1 = "";
+    var answer2 = "";
+    var answer3 = "";
+    var answer4 = "";
+    var answer5 = "";
+
+    function Quiz()
+      {
+        if(questionCount == 0){
+            answer1 = document.getElementById("answer").value;
+          if(answer1 == "Once Upon a Time in Hollywood"){
+              score = score + 1;
+            }
+            document.getElementById("pic").innerHTML = "<img src = 'Moonlight.jpg'>";
+
+        }
+
+          if(questionCount == 1){
+              answer2 = document.getElementById("answer").value;
+            if(answer2 == "Moonlight"){
+                score = score + 1;
+              }
+              document.getElementById("pic").innerHTML =  "<img src = 'TheGodfather.jpg'>";
+
+        }
+
+          if(questionCount == 2){
+              answer3 = document.getElementById("answer").value;
+            if(answer3 == "The Godfather"){
+              score = score + 1;
+              }
+              document.getElementById("pic").innerHTML =  "<img src = 'Tenet.jpg'>";
+
+        }
+
+            if(questionCount == 3){
+                answer4 = document.getElementById("answer").value;
+                if(answer4 == "Tenet"){
+                  score = score + 1;
+                  }
+              document.getElementById("pic").innerHTML = "<img src = 'PulpFiction.jpg'>";
+
+        }
+
+          if(questionCount == 4){
+              answer5 = document.getElementById("answer").value;
+                if(answer5 == "Pulp Fiction"){
+                  score = score + 1;
+                      }
+                      document.getElementById("pic").style.visibility = "hidden";
+                      document.getElementById("answer").style.visibility = "hidden";
+                      document.getElementById("ibutton").style.visibility = "hidden";
+                      document.getElementById("header").style.visibility = "hidden";
+                      document.getElementById("message").innerHTML = "*** RESULTS ***";
+                      document.getElementById("final").innerHTML = "Score: " + score + "/5";
+                      document.getElementById("answer1").innerHTML = "Answer - - Once Upon a Time in Hollywood" + " YOUR Answer - - " + answer1;
+                      document.getElementById("answer2").innerHTML = "Answer - - Moonlight" + " YOUR Answer - - " + answer2;
+                      document.getElementById("answer3").innerHTML = "Answer - - The Godfather" + " YOUR Answer - - " + answer3;
+                      document.getElementById("answer4").innerHTML = "Answer - - Tenet" + " YOUR Answer - - " + answer4;
+                      document.getElementById("answer5").innerHTML = "Answer - - Pulp Fiction" + " YOUR Answer - - " + answer5;
+                      document.getElementById("lowNav").style.visibility = "visible";
+        }
+        questionCount = questionCount + 1;
+      }
+
+
+
+    </script>
+
+  </head>
+
+  <div>
+  <center>
+  <ul id = "topNav">
+    <h1>Guess That Movie!</h1>
+  </ul>
+  </div>
+  <center>
+  <body>
+    <h2 id= "header">Don't Forget to Capitalize!</h2>
+    <div class="myDiv">
+    <span id = "pic"><img src = 'OnceUponATime.jpg'></span>
+      <br>
+      <br>
+    <input type = "text" id = "answer">
+
+    <input id = "ibutton" type = "button" value = "Next Picture" onclick = "Quiz()">
+    <span id= "end">
+    <center>
+
+  <ul id = "midNav">
+    <center>
+    <span id = "message"></span>
+      <br>
+      <br>
+    <span id = "final"></span>
+      <br>
+      <br>
+    <span id = "answer1"></span>
+      <br>
+      <br>
+    <span id = "answer2"></span>
+      <br>
+      <br>
+    <span id = "answer3"></span>
+      <br>
+      <br>
+  <span id = "answer4"></span>
+      <br>
+      <br>
+  <span id = "answer5"></span>
+        <br>
+        <br>
+  </ul>
+
+<ul id = "lowNav">
+  <input type="button" value= "Play Again" onClick="location.href=location.href">
+ </span>
+</ul>
+ </div>
+  </body>
+</html>
